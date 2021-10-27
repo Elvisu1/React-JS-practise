@@ -1,7 +1,7 @@
 import './App.css';
 import MyButton from "./components/MyButton";
 
-import MyPicCard from "./components/MyBottomCard/MyPicCard";
+import BottomCardContainer from "./components/BottomCardContainer";
 
 const topSecionData = {
   title: 'The band!',
@@ -24,6 +24,8 @@ function App() {
       <section className='top container'>
         <h1 className='title title--main'>{topSecionData.title}</h1>
         <MyButton />
+        <MyButton text='Im a tomato button' color='tomato'/>
+        <MyButton text='hi' color='blue' />
         <h6 className='title title--sub'>{topSecionData.subTitle}</h6>
         <p className='text--main'>{topSecionData.para}</p>
         <div className='people-container d-flex justify-around'>
@@ -45,11 +47,7 @@ function App() {
         <div className='container'>
           <h2 className='title--main'>Tour dates</h2>
           <h6 className='title title--sub'>Remember to book your tickets</h6>
-          <div className='tour-cards-container d-flex justify-around'>
-           <MyPicCard />
-            <MyPicCard />
-            <MyPicCard />
-          </div>
+<BottomCardContainer />
         </div>
       </section>
     </div>
