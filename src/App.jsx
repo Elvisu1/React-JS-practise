@@ -2,6 +2,8 @@ import './App.css';
 import MyButton from "./components/MyButton";
 
 import BottomCardContainer from "./components/BottomCardContainer";
+import BottomSectionHeader from "./components/BottomSectionHeader";
+import Tags from "./components/Tags";
 
 const topSecionData = {
   title: 'The band!',
@@ -26,6 +28,7 @@ function App() {
         <MyButton />
         <MyButton text='Im a tomato button' color='tomato'/>
         <MyButton text='hi' color='blue' />
+
         <h6 className='title title--sub'>{topSecionData.subTitle}</h6>
         <p className='text--main'>{topSecionData.para}</p>
         <div className='people-container d-flex justify-around'>
@@ -45,10 +48,14 @@ function App() {
       </section>
       <section className='black'>
         <div className='container'>
-          <h2 className='title--main'>Tour dates</h2>
-          <h6 className='title title--sub'>Remember to book your tickets</h6>
+<BottomSectionHeader title='Our new dates' subTittle='Book now before  its too late'/>
+
 <BottomCardContainer />
+          <BottomSectionHeader title='Thank You' subTittle='See you soon'/>
         </div>
+      </section>
+      <section className='extra container'>
+        <Tags tag1='Paris' tag2='Brussels' tag3='Vilnius' tag4='Warsaw' tagSpecial ='Mexico City' />
       </section>
     </div>
   );
