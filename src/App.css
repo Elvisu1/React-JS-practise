@@ -1,0 +1,72 @@
+/* commmon */
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+}
+
+.d-flex {
+  display: flex;
+  gap: 1rem;
+}
+.justify-around {
+  justify-content: space-around;
+}
+
+/* top section */
+.top .title {
+  text-align: center;
+}
+.title--sub {
+  font-weight: normal;
+  font-size: 1rem;
+}
+
+.people-card {
+  width: 25%;
+  text-align: center;
+}
+
+.black {
+  background-color: #333;
+  margin-top: 5%;
+  padding: 5% 0;
+  color: snow;
+  text-align: center;
+}
+.black .title--main {
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.tour-card {
+  background-color: snow;
+  color: #333;
+  text-align: left;
+}
+.tour-card p,
+.tour-card button {
+  margin-left: 2rem;
+  margin-bottom: 2rem;
+}
+.title--card {
+  font-size: 1.4rem;
+}
+.btn--black {
+  background-color: #000;
+  color: snow;
+  border: none;
+  font-size: 1.3rem;
+  padding: 0.5em 1em;
+}
+.tour__date {
+  color: gray;
+}
