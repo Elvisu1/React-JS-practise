@@ -89,6 +89,30 @@ img {
   padding: 4px;
 }
 .tags .tags__item.tags__item--special {
-  background-color: #333;
+
   color: snow;
 }
+
+ /*subscribe style*/
+.subscribe{
+  height: 200px;
+
+}
+.subscribe .subscribe__header{
+  background-color: #333;
+  color: snow;
+  padding: 0.1px 0.8rem;
+  margin-top: 1rem;
+}
+.subscribe .subscribe__item{
+  display: flex;
+  flex-direction: column;
+}
+.subscribe button{
+  height: 40px;
+  background-color: red;
+  color: white;
+  border-color: red;
+}
+
+

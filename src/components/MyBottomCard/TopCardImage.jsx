@@ -1,7 +1,7 @@
 // top image
-import desertImg from "../../assets/desert.jpg";
+import cityImg from "../../assets/Vilnius_city.jpg";
 
 export default function TopCardImage(){
-    return <img src={desertImg} alt='cart' />
+    return <img src={cityImg} alt='cart' />
 }
 
